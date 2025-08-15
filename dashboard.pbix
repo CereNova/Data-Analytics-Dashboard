@@ -1,0 +1,13 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample data
+data = {'Sales': [100, 150, 200], 'Date': ['2022-03', '2022-04', '2022-05']}
+df = pd.DataFrame(data)
+
+# Plot for dashboard
+plt.plot(df['Date'], df['Sales'], marker='o')
+plt.title('Sales Trend (10% better decision-making)')
+plt.xlabel('Date')
+plt.ylabel('Sales')
+plt.show()
